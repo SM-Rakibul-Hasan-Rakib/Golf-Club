@@ -101,3 +101,44 @@ video {
   width: 100%;
   z-index: 10;
 }
+#scroller {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-y: auto;
+  position: relative;
+  z-index: 10;
+}
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: gilroy;
+  margin-right: 10px;
+  transition: all linear 0.5s;
+  color: transparent;
+  -webkit-text-stroke: 2px #95c11e;
+}
+
+#scroller h4:hover {
+  color: #95c11e;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
