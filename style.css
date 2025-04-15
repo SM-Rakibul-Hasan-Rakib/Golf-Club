@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  perspective: 800px;
   width: 100%;
 }
 #cursor {
@@ -226,4 +227,43 @@ video {
 }
 .card:hover .overlay {
   opacity: 1;
+}
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
+}
+#green-div {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left bottom, #119f3a, #ace022);
+}
+#green-div h4 {
+  width: 45%;
+  line-height: 33px;
+  line-height: 50px;
+  color: #000;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#green-div img {
+  height: 100%;
+  object-fit: cover;
+  width: 14%;
+}
+#page-3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page-3 > p {
+  font-size: 30px;
+  font-weight: 700;
+  width: 55%;
+  line-height: 40px;
+  text-align: center;
 }
