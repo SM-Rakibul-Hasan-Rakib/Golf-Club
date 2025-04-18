@@ -278,4 +278,11 @@ video {
   left: 15%;
   top: 25%;
 }
-#page-3 #clone1;
+#page-3 #clone2 {
+  bottom: 30%;
+  right: 15%;
+}
+#page-3 #clone2 {
+  bottom: 30%;
+  right: 15%;
+}
