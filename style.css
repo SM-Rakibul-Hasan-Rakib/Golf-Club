@@ -19,15 +19,17 @@ body {
   border-radius: 50%;
   position: fixed;
   z-index: 99;
+  transition: all linear 0.1s;
 }
 #cursor-blur {
-  height: 400px;
-  width: 400px;
-  background-color: #b2f3003c;
+  height: 500px;
+  width: 500px;
+  background-color: rgba(188, 255, 5, 0.3);
   border-radius: 50%;
   position: fixed;
   filter: blur(50px);
   z-index: 9;
+  transition: all linear 0.4s;
 }
 #nav {
   height: 145px;
@@ -257,6 +259,7 @@ video {
   width: 100%;
   background-color: #000;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -264,6 +267,15 @@ video {
   font-size: 30px;
   font-weight: 700;
   width: 55%;
-  line-height: 40px;
+  line-height: 45px;
   text-align: center;
 }
+#page-3 img {
+  position: absolute;
+  height: 60px;
+}
+#page-3 #clone1 {
+  left: 15%;
+  top: 25%;
+}
+#page-3 #clone1;
